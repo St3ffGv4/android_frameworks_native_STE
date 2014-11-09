@@ -91,11 +91,8 @@ DisplayDevice::DisplayDevice(
     mNativeWindow = new Surface(producer, false);
 #ifndef BOARD_EGL_NEEDS_LEGACY_FB
     ANativeWindow* const window = mNativeWindow.get();
-<<<<<<< HEAD
 #else
     ANativeWindow* const window = new FramebufferNativeWindow();
-=======
->>>>>>> 8f24acd... STE Multimedia Fix
 #endif
 
     /*
